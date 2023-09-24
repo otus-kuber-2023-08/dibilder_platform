@@ -16,3 +16,7 @@
 5. Изучены Ingress-контроллеры, создан http-балансировщик для подов Web
 6. Создан https Ingress для kubernetes-Dasboard
 7. Создан Ingress для Canary подов, отправляющий 10% траффика в неймспейс Canary
+# kubernetes-security
+1. Создан ServiceAccount bob и привязан к класстерной роле admin. Создан ServiceAccount dave и ни к какой роле не привязан, он ничего и не сможет.
+2. Создан ServiceAccount carol в NS prometheus, создана кластерная роль pods-viewer. Сущности связаны с помощью ClusterRoleBinding.
+3. Созданы ServiceAccounts jane и ken, созданы RoleBinding для них к ролям admin и view в NS dev.
