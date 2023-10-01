@@ -20,3 +20,6 @@
 1. Создан ServiceAccount bob и привязан к класстерной роле admin. Создан ServiceAccount dave и ни к какой роле не привязан, он ничего и не сможет.
 2. Создан ServiceAccount carol в NS prometheus, создана кластерная роль pods-viewer. Сущности связаны с помощью ClusterRoleBinding.
 3. Созданы ServiceAccounts jane и ken, созданы RoleBinding для них к ролям admin и view в NS dev.
+# kubernetes-volumes
+1. Применены готовые манифесты StatefulSet и HeadlessService для minio.
+2. Хранение переменных окружения переделано на Kubernetes Secrets.
