@@ -23,3 +23,5 @@
 # kubernetes-volumes
 1. Применены готовые манифесты StatefulSet и HeadlessService для minio.
 2. Хранение переменных окружения переделано на Kubernetes Secrets.
+
+https://github.com/helm/chartmuseum
