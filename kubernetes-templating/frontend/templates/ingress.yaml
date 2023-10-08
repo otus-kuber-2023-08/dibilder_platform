@@ -12,7 +12,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: frontend.158.160.113.107.nip.io
+  - host: {{ .Values.ingress.host }}
     http:
       paths:
       - backend:
@@ -24,8 +24,8 @@ spec:
         pathType: Prefix
   tls:
   - hosts:
-    - frontend.158.160.113.107.nip.io
-    secretName: frontend.158.160.113.107.nip.io
+    - {{ .Values.ingress.host }}
+    secretName: {{ .Values.ingress.host }}
 status:
   loadBalancer:
     ingress:
