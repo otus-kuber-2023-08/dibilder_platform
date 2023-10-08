@@ -23,3 +23,13 @@
 # kubernetes-volumes
 1. Применены готовые манифесты StatefulSet и HeadlessService для minio.
 2. Хранение переменных окружения переделано на Kubernetes Secrets.
+# kubernetes-templating
+1. Создан kubernetes cluster в yandex cloud
+2. Установлен ingress-nginx
+3. Установлен и настроен cert-manager через helm
+4. Установлен и настроен chartmuseum через helm
+5. Установлен и настроен habror через helm
+6. Написан helmfile для установке группы чартов
+7. На примере hipster-shop разобрано создание чартов, подтягивание локальных зависимостей и зависимостей из репозиториев. Написание Values.yaml
+8. Написан чарт для paymentservice и shippingservice с помощью kubecfg
+9. Созданы kustomize шаблоны для emailservice
