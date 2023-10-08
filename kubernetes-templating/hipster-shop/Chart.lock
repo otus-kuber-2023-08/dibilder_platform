@@ -6,4 +6,4 @@ dependencies:
   repository: file://../redis
   version: 0.1.0
 digest: sha256:745fa8356d9f304cd0c93df26403e519147c3b4741c2b94232c5d3318a11821f
-generated: "2023-10-07T22:50:56.344369967+03:00"
+generated: "2023-10-08T12:59:22.957621282+03:00"
